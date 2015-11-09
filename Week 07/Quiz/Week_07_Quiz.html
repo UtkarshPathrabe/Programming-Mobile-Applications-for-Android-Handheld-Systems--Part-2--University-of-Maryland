@@ -67,8 +67,8 @@ img {
 
 
 
-<div id="quiz-05" class="section level1">
-<h1>Quiz 05</h1>
+<div id="quiz-07" class="section level1">
+<h1>Quiz 07</h1>
 <table>
 <thead>
 <tr class="header">
@@ -79,170 +79,312 @@ img {
 <tbody>
 <tr class="odd">
 <td align="center">1/100</td>
-<td align="center">9/9</td>
+<td align="center">16/16</td>
 </tr>
 </tbody>
 </table>
 <div id="question-01" class="section level2">
 <h2>Question 01</h2>
-<p><code>(True or False)</code> Java Threads running in the same Process share dynamically-allocated memory.</p>
+<p>The GraphicsPaint example application displays several TextViews. These TextViews are specified in the res/layout/main.xml file. Which of the following Paint-related attributes were specified for every one of the TextViews?</p>
+<ul>
+<li>android:typeface<br />
+</li>
+<li>android:textColorHint<br />
+</li>
+<li>android:textAllCaps<br />
+</li>
+<li>android:textColor</li>
+</ul>
 <div id="answer" class="section level3">
 <h3>Answer</h3>
 <ul>
-<li>True</li>
+<li>android:typeface<br />
+</li>
+<li>android:textColor</li>
 </ul>
 </div>
 </div>
 <div id="question-02" class="section level2">
 <h2>Question 02</h2>
-<p><code>(True or False)</code> Once a Java Thread is created, it typically starts running as soon as the operating system can schedule it.</p>
+<p>When your application uses a Drawable, such as a ShapeDrawable, what Drawable method must the application invoke to draw the Drawable.</p>
+<ul>
+<li><code>Canvas.drawBitmap()</code>.<br />
+</li>
+<li><code>View.onDraw()</code>.<br />
+</li>
+<li><code>View.paint()</code>.<br />
+</li>
+<li>None. Drawable is a graphic that goes into a View. The drawing of these graphics is handled by the View system.</li>
+</ul>
 <div id="answer-1" class="section level3">
 <h3>Answer</h3>
 <ul>
-<li>False</li>
+<li>None. Drawable is a graphic that goes into a View. The drawing of these graphics is handled by the View system.</li>
 </ul>
 </div>
 </div>
 <div id="question-03" class="section level2">
 <h2>Question 03</h2>
-<p>If your Activity creates its user interface hierarchy during a call to its onCreate() method, how do you know in which Thread onCreate() was called? Choose the single best answer.</p>
+<p>Suppose your application creates and uses a custom View subclass. When this View needs to be redrawn, which two of the following methods will most likely be invoked?</p>
 <ul>
-<li>The onCreate() is always run in the UI thread.<br />
+<li><code>View.onDraw()</code>.<br />
 </li>
-<li>Examine the application’s AndroidManifest.xml file.<br />
+<li><code>View.requestLayout()</code>.<br />
 </li>
-<li>Use LogCat to print out the Thread’s ID.<br />
+<li><code>View.invalidate()</code>.<br />
 </li>
-<li>Examine the application’s code to determine whether the call occurred in an application-generated Thread or in one of the system’s Threads.</li>
+<li><code>Canvas.drawView()</code>.</li>
 </ul>
 <div id="answer-2" class="section level3">
 <h3>Answer</h3>
 <ul>
-<li>The onCreate() is always run in the UI thread.</li>
+<li><code>View.onDraw()</code>.<br />
+</li>
+<li><code>View.invalidate()</code>.</li>
 </ul>
 </div>
 </div>
 <div id="question-04" class="section level2">
 <h2>Question 04</h2>
-<p>Which of the following methods is guaranteed to run on the application’s UI Thread?</p>
+<p>The GraphicsFrameAnimation application includes a res/drawable/view_animation.xml file. This file has an <animation-list> tag. To what Android class does this tag correspond? See: <a href="http://developer.android.com/guide/topics/resources/animation-resource.html" class="uri">http://developer.android.com/guide/topics/resources/animation-resource.html</a> for more documentation.</p>
 <ul>
-<li>Activity.runOnUIThread().<br />
+<li>AnimationSet.<br />
 </li>
-<li>View.post().<br />
+<li>AnimationDrawable.<br />
 </li>
-<li>AsyncTask.doInBackground().<br />
+<li>FrameAnimation.<br />
 </li>
-<li>Handler.sendMessage().</li>
+<li>TweenAnimation.</li>
 </ul>
 <div id="answer-3" class="section level3">
 <h3>Answer</h3>
 <ul>
-<li>Activity.runOnUIThread().<br />
-</li>
-<li>View.post().</li>
+<li>AnimationDrawable.</li>
 </ul>
 </div>
 </div>
 <div id="question-05" class="section level2">
 <h2>Question 05</h2>
-<p>Which of the following statements correctly capture why an application that uses a Handler, might send Messages to the Handler, rather than post Runnables to it, or vice versa?</p>
+<p>View animation differs from Property animation in which of the following ways? See: <a href="http://developer.android.com/guide/topics/graphics/prop-animation.html" class="uri">http://developer.android.com/guide/topics/graphics/prop-animation.html</a> for more information.</p>
 <ul>
-<li>Messages are used when the Handler implements the Message response.<br />
+<li>View animation typically requires less code to setup and use than Property animation does.<br />
 </li>
-<li>Runnables are used when the Sender implements the action to be taken.<br />
+<li>View animation does not actually modify the View Object, just its appearance on the screen, while Property animation will modify the Object being animated.<br />
 </li>
-<li>Messages can take parameters. Runnables can’t.<br />
+<li>View animation is for Views only. Property animation animates more than just Views.<br />
 </li>
-<li>Runnables are less efficient than messages.</li>
+<li>View animation is limited to only a few View properties. Property animation can animate a wider set of properties.</li>
 </ul>
 <div id="answer-4" class="section level3">
 <h3>Answer</h3>
 <ul>
-<li>Messages are used when the Handler implements the Message response.<br />
+<li>View animation typically requires less code to setup and use than Property animation does.<br />
 </li>
-<li>Runnables are used when the Sender implements the action to be taken.</li>
+<li>View animation does not actually modify the View Object, just its appearance on the screen, while Property animation will modify the Object being animated.<br />
+</li>
+<li>View animation is for Views only. Property animation animates more than just Views.<br />
+</li>
+<li>View animation is limited to only a few View properties. Property animation can animate a wider set of properties.</li>
 </ul>
 </div>
 </div>
 <div id="question-06" class="section level2">
 <h2>Question 06</h2>
-<p>Android supports several HTTP clients. Which one of the following HTTP clients will be Android’s preferred HTTP client in the future? See <a href="http://android-developers.blogspot.com/2011/09/androids-http-clients.html" class="uri">http://android-developers.blogspot.com/2011/09/androids-http-clients.html</a> for more information.</p>
+<p>Several of this lesson’s example applications make use of interpolators, such as the LinearInterpolator and the AccelerateDecelerateInterpolator. Which one of the following statements best captures the main purpose of an interpolator?</p>
 <ul>
-<li>DefaultHttpClient<br />
+<li>It sets the values of a View property.<br />
 </li>
-<li>URLStream<br />
+<li>It defines how specific values in an animation are calculated as a function of time.<br />
 </li>
-<li>HttpURLConnection<br />
+<li>It defines the duration of an animation.<br />
 </li>
-<li>AndroidHttpClient</li>
+<li>It defines the starting time of the animation.</li>
 </ul>
 <div id="answer-5" class="section level3">
 <h3>Answer</h3>
 <ul>
-<li>HttpURLConnection</li>
+<li>It defines how specific values in an animation are calculated as a function of time.</li>
 </ul>
 </div>
 </div>
 <div id="question-07" class="section level2">
 <h2>Question 07</h2>
-<p>Which of the following data formats did we discuss in these lectures?</p>
+<p>A gesture usually starts with a motion event that has which one of the following action codes?</p>
 <ul>
-<li>JSON<br />
+<li><code>ACTION_DOWN</code>.<br />
 </li>
-<li>XML<br />
+<li><code>ACTION_POINTER_UP</code>.<br />
 </li>
-<li>Python<br />
+<li><code>ACTION_POINTER_DOWN</code>.<br />
 </li>
-<li>KML</li>
+<li><code>ACTION_UP</code>.</li>
 </ul>
 <div id="answer-6" class="section level3">
 <h3>Answer</h3>
 <ul>
-<li>JSON<br />
-</li>
-<li>XML</li>
+<li><code>ACTION_DOWN</code>.</li>
 </ul>
 </div>
 </div>
 <div id="question-08" class="section level2">
 <h2>Question 08</h2>
-<p>Which of the following statements are generally true about DOM parsers?</p>
+<p>Gestures can end with motion events that have which of the following action codes?</p>
 <ul>
-<li>DOM parsers provide iterators that pull XML content into an application on demand.<br />
+<li><code>ACTION_DOWN</code>.<br />
 </li>
-<li>DOM parsers use a streaming model in which the parser calls back into the application when specific elements are parsed.<br />
+<li><code>ACTION_POINTER_UP</code>.<br />
 </li>
-<li>DOM parsers convert an XML document into a tree structure, which can make it easier to do whole document analyses.<br />
+<li><code>ACTION_UP</code>.<br />
 </li>
-<li>DOM parsers tend to use more memory than the other kinds of Parsers we discussed in this lesson.</li>
+<li><code>ACTION_CANCEL</code>.<br />
+</li>
+<li><code>ACTION_POINTER_DOWN</code>.</li>
 </ul>
 <div id="answer-7" class="section level3">
 <h3>Answer</h3>
 <ul>
-<li>DOM parsers convert an XML document into a tree structure, which can make it easier to do whole document analyses.<br />
+<li><code>ACTION_UP</code>.<br />
 </li>
-<li>DOM parsers tend to use more memory than the other kinds of Parsers we discussed in this lesson.</li>
+<li><code>ACTION_CANCEL</code>.</li>
 </ul>
 </div>
 </div>
 <div id="question-09" class="section level2">
 <h2>Question 09</h2>
-<p>The JavaScript Object Notation Language represents information using two types of data structures. Which two of the following are those data structure?</p>
+<p>Which of the following statements represent consistency properties that Android tries to guarantee about the MotionEvents comprising touch gestures?</p>
 <ul>
-<li>Lists<br />
+<li>Pointers come up one at time.<br />
 </li>
-<li>Trees<br />
+<li>Pointers move as a group.<br />
 </li>
-<li>Bags<br />
+<li>Every Pointer that goes down eventually comes up.<br />
 </li>
-<li>Maps</li>
+<li>Pointers go down one at a time.</li>
 </ul>
 <div id="answer-8" class="section level3">
 <h3>Answer</h3>
 <ul>
-<li>Lists<br />
+<li>Pointers come up one at time.<br />
 </li>
-<li>Maps</li>
+<li>Pointers move as a group.<br />
+</li>
+<li>Pointers go down one at a time.</li>
+</ul>
+</div>
+</div>
+<div id="question-10" class="section level2">
+<h2>Question 10</h2>
+<p>Suppose your application has a generic View and when the user touches that View, you want the doWork() method of Object1 to be called. Which of the following strategies can you use to guarantee that?</p>
+<ul>
+<li>Attach Object1 as a listener of the View and call doWork() from Object1’s onTouch() method.<br />
+</li>
+<li>Call Object1.doWork() from the View’s onTouchEvent() method.<br />
+</li>
+<li>Call startActivity (Object1) from the View’s onTouch() method.<br />
+</li>
+<li>Call Object1.doWork() from the View’s OnClickListener.</li>
+</ul>
+<div id="answer-9" class="section level3">
+<h3>Answer</h3>
+<ul>
+<li>Attach Object1 as a listener of the View and call doWork() from Object1’s onTouch() method.<br />
+</li>
+<li>Call Object1.doWork() from the View’s onTouchEvent() method.</li>
+</ul>
+</div>
+</div>
+<div id="question-11" class="section level2">
+<h2>Question 11</h2>
+<p>The TouchGestureViewFlipper application uses a GestureDetector. In the constructor for the GestureDetector, the application passes in a Listener. What class was that Listener?</p>
+<div id="answer-10" class="section level3">
+<h3>Answer</h3>
+<p>SimpleOnGestureListener</p>
+</div>
+</div>
+<div id="question-12" class="section level2">
+<h2>Question 12</h2>
+<p>Which method is used to determine whether an actual user gesture matches a custom application-defined gesture?</p>
+<ul>
+<li><code>GestureLibrary.recognize()</code>.<br />
+</li>
+<li><code>GestureLibrary.match()</code>.<br />
+</li>
+<li><code>GestureOverlayView.onGesturePerformed()</code>.<br />
+</li>
+<li><code>GestureLibrary.load()</code>.</li>
+</ul>
+<div id="answer-11" class="section level3">
+<h3>Answer</h3>
+<ul>
+<li><code>GestureLibrary.recognize()</code>.</li>
+</ul>
+</div>
+</div>
+<div id="question-13" class="section level2">
+<h2>Question 13</h2>
+<p><code>(True or False)</code> In Android the term “Ringtone” refers exclusively to the sounds that are played when a device receives a phone call?</p>
+<div id="answer-12" class="section level3">
+<h3>Answer</h3>
+<ul>
+<li>False</li>
+</ul>
+<div id="explanation" class="section level4">
+<h4>Explanation</h4>
+<ul>
+<li>In Android, the term <code>Ringtone</code> refers to sounds played not only when the phone rings, but also when notifications arrive, alarms go off, etc.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="question-14" class="section level2">
+<h2>Question 14</h2>
+<p>Suppose your application uses a MediaPlayer. Which of the following MediaPlayer methods will likely be called before the MediaPlayer.start() method is called? See: <a href="http://developer.android.com/reference/android/media/MediaPlayer.html" class="uri">http://developer.android.com/reference/android/media/MediaPlayer.html</a> for more documentation.</p>
+<ul>
+<li><code>getDefaultStream()</code>.<br />
+</li>
+<li><code>prepare()</code>.<br />
+</li>
+<li><code>setDataSource()</code>.<br />
+</li>
+<li><code>playback()</code>.</li>
+</ul>
+<div id="answer-13" class="section level3">
+<h3>Answer</h3>
+<ul>
+<li><code>prepare()</code>.<br />
+</li>
+<li><code>setDataSource()</code>.</li>
+</ul>
+</div>
+</div>
+<div id="question-15" class="section level2">
+<h2>Question 15</h2>
+<p>Which of the following functions does the MediaRecorder class support?</p>
+<ul>
+<li>Recording infrared light signals.<br />
+</li>
+<li>Recording ambient temperature readings.<br />
+</li>
+<li>Recording video.<br />
+</li>
+<li>Recording audio.</li>
+</ul>
+<div id="answer-14" class="section level3">
+<h3>Answer</h3>
+<ul>
+<li>Recording video.<br />
+</li>
+<li>Recording audio.</li>
+</ul>
+</div>
+</div>
+<div id="question-16" class="section level2">
+<h2>Question 16</h2>
+<p><code>(True or False)</code> The Camera.open() method may not be able to return a instance of the Camera to the caller.</p>
+<div id="answer-15" class="section level3">
+<h3>Answer</h3>
+<ul>
+<li>True</li>
 </ul>
 </div>
 </div>
