@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imageViewPriority" android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:padding="5dp"/>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <TextView android:id="@+id/textViewTitle" android:textSize="15dp" android:text="Title"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+        <TextView android:id="@+id/textViewSubTitle" android:textSize="10dp" android:text="DueDate"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textViewTitle"
+            android:layout_alignParentBottom="true" android:gravity="bottom"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Daily Selfie</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_camera">Take Selfie</string>
+    <string name="action_delete">Delete</string>
+    <string name="title_activity_camera">Camera Activity</string>
+    <string name="title_activity_settings">Notification Settings</string>
+    <string name="timer_title">Notification Settings</string>
+    <string name="selected">Selected</string>
+    <string name="delete_selfies">DELETE SELFIES</string>
+    <string name="delete_question">Would you like to delete selected selfies?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+</resources>
